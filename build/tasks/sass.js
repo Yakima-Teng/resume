@@ -8,7 +8,7 @@ const log = require('fancy-log')
 const { browserSync, join, isProduction } = require('../utils')
 
 module.exports = () => {
-  return gulp.src(join('/src/css/app.scss'))
+  return gulp.src(join('/src/css/*.scss'))
     .pipe(sass()).on('error', log)
     .pipe(autoprefixer())
     .pipe(gulpif(isProduction, cleanCSS({compatibility: 'ie8'})))

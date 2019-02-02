@@ -8,7 +8,7 @@ const { isProduction, join, browserSync } = require('../utils')
 const { renderData } = require('../../config')
 
 module.exports = () => {
-  return gulp.src(join('/src/index.ejs'))
+  return gulp.src(join('/src/*.ejs'))
     .pipe(ejs(renderData, {}, { ext: '.html' })).on('error', log)
     .pipe(gulpif(isProduction, htmlmin({ collapseWhitespace: true })))
     .pipe(gulp.dest(join('/dist')))

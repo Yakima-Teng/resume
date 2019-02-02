@@ -15,7 +15,7 @@ const start = gulp.series(
 
 start()
 
-gulp.watch([join('/src/index.ejs')], taskEJS)
-gulp.watch([join('/src/css/*.scss')], taskSass)
-gulp.watch([join('/src/img/*.*')], taskImg)
-gulp.watch([join('/src/js/*.js')], taskJS)
+gulp.watch([join('/src/**/*.ejs')], taskEJS)
+gulp.watch([join('/src/css/**/*.scss')], taskSass)
+gulp.watch([join('/src/img/**/*.*')], taskImg)
+gulp.watch([join('/src/js/**/*.js')], taskJS)

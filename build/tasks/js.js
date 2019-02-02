@@ -7,7 +7,7 @@ const log = require('fancy-log')
 const { join, isProduction, browserSync } = require('../utils')
 
 module.exports = () => {
-  return gulp.src(join('/src/js/app.js'))
+  return gulp.src(join('/src/js/*.js'))
     .pipe(babel({
       presets: ['@babel/env']
     })).on('error', log)
