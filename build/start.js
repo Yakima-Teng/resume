@@ -4,12 +4,13 @@ const { join } = require('./utils')
 
 const taskEJS = require('./tasks/ejs')
 const taskImg = require('./tasks/img')
+const taskLib = require('./tasks/lib')
 const taskJS = require('./tasks/js')
 const taskSass = require('./tasks/sass')
 const taskServe = require('./tasks/serve')
 
 const start = gulp.series(
-  gulp.parallel(taskEJS, taskSass, taskImg, taskJS),
+  gulp.parallel(taskEJS, taskSass, taskImg, taskLib, taskJS),
   taskServe
 )
 
