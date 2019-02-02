@@ -1,5 +1,9 @@
 module.exports = {
   renderData: {
-    note: '供渲染index.ejs用的数据'
+    seo: {
+      title: '页面标题',
+      description: '网站描述',
+      keywords: ['关键词1', '关键词2']
+    }
   }
 }
