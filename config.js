@@ -13,9 +13,9 @@ module.exports = {
    */
   renderData: {
     seo: {
-      title: '页面标题',
-      description: '网站描述',
-      keywords: ['关键词1', '关键词2']
+      title: '滕运锋的前端简历',
+      description: '滕运锋的前端开发工程师简历',
+      keywords: ['简历', '前端', '滕运锋']
     }
   }
 }

@@ -15,6 +15,6 @@ const start = gulp.series(
 
 start()
 
-gulp.watch([join('/src/**/*.ejs')], taskEJS)
+gulp.watch([join('/src/**/*.ejs'), join('/config.js')], taskEJS)
 gulp.watch([join('/src/css/**/*.scss')], taskSass)
 gulp.watch([join('/src/js/**/*.js')], taskJS)
