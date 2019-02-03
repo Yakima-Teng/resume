@@ -1,3 +1,137 @@
+@import './reset.no.scss';
+
+$light-border-color: #999;
+
 body {
-  margin: 0;
+  color: #333;
+}
+a {
+  // 打印时，链接样式恢复成跟其他常规字体一样，否则不好看，尤其是默认的下划线会影响辨识
+  @media print {
+    & {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+.site-wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.site-header {
+  .title {
+    .main {
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .sub {
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+  .intention {
+    font-size: 12px;
+    color: #f00;
+    font-weight: bold;
+  }
+}
+
+.site-section {
+  margin-top: 18px;
+  border-top: 3px solid #333;
+}
+
+.site-section-header {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: bold;
+  border-bottom: 2px solid $light-border-color;
+}
+
+.site-section-content {
+  padding: 10px 0;
+}
+
+.profile-box {
+  font-size: 0;
+  border: 1px solid $light-border-color;
+  border-left-width: 0px;
+  box-sizing: border-box;
+  .item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 0 6px;
+    border-left: 1px solid $light-border-color;
+    &:nth-of-type(n+4) {
+      border-top: 1px solid $light-border-color;
+    }
+    &.one {
+      width: 100%;
+    }
+    &.two {
+      width: 50%;
+    }
+    &.three {
+      width: 33.33%;
+    }
+    @media screen and (max-width:584px) {
+      &:nth-of-type(n+2) {
+        border-top: 1px solid $light-border-color;
+      }
+      &.two {
+        width: 100%;
+      }
+      &.three {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.skill-box {
+  padding: 0 6px;
+  .item {
+    font-size: 14px;
+    box-sizing: border-box;
+    text-indent: 2em;
+    &:nth-of-type(n+2) {
+      margin-top: .5em;
+    }
+  }
+}
+
+.project-box {
+  .item {
+    &:nth-of-type(n+2) {
+      margin-top: 18px;
+    }
+  }
+  .project-header {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .project-content {
+    .paragraph {
+      font-size: 13px;
+      box-sizing: border-box;
+      text-indent: 2em;
+      &:nth-of-type(n+2) {
+        margin-top: .6em;
+      }
+    }
+  }
+}
+
+.job-box {
+  .item {
+    font-size: 13px;
+    box-sizing: border-box;
+  }
 }

@@ -22,7 +22,54 @@
       <section class="site-section">
         <header class="site-section-header">基本信息</header>
         <article class="site-section-content">
-          
+          <ul class="profile-box">
+            <% sections.profile.forEach((item) => { %>
+              <li class="item <%= item.widthPercentage %>"><%- item.text %></li>
+            <% }); %>
+          </ul>
+        </article>
+      </section>
+
+      <section class="site-section">
+        <header class="site-section-header">技能描述</header>
+        <article class="site-section-content">
+          <ul class="skill-box">
+            <% sections.skills.forEach((item) => { %>
+              <li class="item"><%= item.join('') %></li>
+            <% }); %>
+          </ul>
+        </article>
+      </section>
+
+      <section class="site-section">
+        <header class="site-section-header">项目经验</header>
+        <article class="site-section-content">
+          <ul class="project-box">
+            <% sections.projects.forEach((item) => { %>
+              <li class="item">
+                <header class="project-header"><%= item.title %></header>
+
+                <article class="project-content">
+                  <p class="paragraph">标签：<%= item.tags.join('、') %></p>
+                  <p class="paragraph">技术栈：<%= item.skills.join('、') %></p>
+                  <% item.description.forEach((paragraph) => { %>
+                    <p class="paragraph"><%- paragraph %></p>
+                  <% }); %>
+                </article>
+              </li>
+            <% }); %>
+          </ul>
+        </article>
+      </section>
+
+      <section class="site-section">
+        <header class="site-section-header">工作经验</header>
+        <article class="site-section-content">
+          <ul class="job-box">
+            <% sections.jobs.forEach((item) => { %>
+              <li class="item"><%= item %></li>
+            <% }); %>
+          </ul>
         </article>
       </section>
     </article>
