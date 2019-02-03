@@ -15,6 +15,11 @@
 
 ## 使用方法
 
+```bash
+# 将`<project-name>`替换成具体的项目名
+git clone https://github.com/Yakima-Teng/resume.git <project-name>
+```
+
 - 本地开发：`npm run start`。
 - 编译供生产环境使用的静态文件：`npm run build`。
 - 将编译产物部署到服务器上：`npm run deploy`。
