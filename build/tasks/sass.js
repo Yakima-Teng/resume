@@ -14,7 +14,7 @@ module.exports = () => {
   ])
     .pipe(sass()).on('error', log)
     .pipe(autoprefixer())
-    .pipe(gulpif(isProduction, cleanCSS({compatibility: 'ie8'})))
+    .pipe(gulpif(isProduction, cleanCSS({ compatibility: 'ie8' })))
     .pipe(gulp.dest(join('/dist/css')))
     .pipe(browserSync.stream())
 }

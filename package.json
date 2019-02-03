@@ -5,7 +5,7 @@
   "main": "README.md",
   "scripts": {
     "start": "cross-env NODE_ENV=development node build/start.js",
-    "lint": "node build/lint.js",
+    "lint": "standard --fix src/js/**/*.js build/**/*.js",
     "build": "cross-env NODE_ENV=production node build/build.js",
     "deploy": "node build/deploy.js"
   },
@@ -41,6 +41,7 @@
     "gulp-scp2": "^0.2.0",
     "gulp-uglify": "^3.0.1",
     "http-proxy-middleware": "^0.19.1",
-    "portfinder": "^1.0.20"
+    "portfinder": "^1.0.20",
+    "standard": "^12.0.1"
   }
 }
