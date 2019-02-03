@@ -13,6 +13,17 @@
 
 具体的涉及思路可以参考这里：[设计原则](./docs/设计原则.md)。
 
+## 模板功能
+
+- 开发者本地EJS模板渲染；
+- SASS预编译，自动添加浏览器厂商前缀；
+- babel转译ES6语法；
+- 内置大量常用第三方库，方便取用；
+- 输出生产文件时会压缩CSS、JS和HTML文件；
+- 开发阶段会自动打开网页，并在保存文件时自动刷新页面；
+- 开发阶段支持转发本地请求，避免跨域问题；
+- 如果有SSH账号，可在配置后通过`npm run deploy`命令自动部署文件到支持SFTP传输的服务器上。
+
 ## 使用方法
 
 ```bash
@@ -22,7 +33,7 @@ git clone https://github.com/Yakima-Teng/resume.git <project-name>
 
 - 本地开发：`npm run start`。
 - 编译供生产环境使用的静态文件：`npm run build`。
-- 将编译产物部署到服务器上：`npm run deploy`。
+- 将编译产物部署到服务器上：`npm run deploy`（需要先将`build`目录下的`deploy-example.js`重命名为`deploy.js`，并修改对应参数）。
 - 检查项目代码（仅提供空脚本，具体由各位决定是否需要实现，以及具体如何实现）：`npm run lint`。
 
 ## src目录约定
