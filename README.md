@@ -34,7 +34,7 @@ git clone https://github.com/Yakima-Teng/resume.git <project-name>
 - 本地开发：`npm run start`。
 - 编译供生产环境使用的静态文件：`npm run build`。
 - 将编译产物部署到服务器上：`npm run deploy`（需要先将`build`目录下的`deploy-example.js`重命名为`deploy.js`，并修改对应参数）。
-- 检查项目代码（使用`standard`，别浪费时间制定规则了，重要的是***统一***）：`npm run lint`。
+- 检查项目代码（使用`standard`，别浪费时间制定规则了，重要的是 ***统一***）：`npm run lint`。
 
 ## src目录约定
 
