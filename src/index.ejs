@@ -52,7 +52,6 @@
 
                 <article class="project-content">
                   <p class="paragraph">标签：<%= item.tags.join('、') %></p>
-                  <p class="paragraph">技术栈：<%= item.skills.join('、') %></p>
                   <% item.description.forEach((paragraph) => { %>
                     <p class="paragraph"><%- paragraph %></p>
                   <% }); %>
