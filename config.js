@@ -28,9 +28,9 @@ module.exports = {
         { text: `手机：${[9856, 5801, 184].reverse().join('-')}`, widthPercentage: 'three' },
         { text: '微信：OrzZone', widthPercentage: 'three' },
         { text: `邮箱：<a href="mailto:${['veryplans', 'gmail.com'].join('@')}">${['veryplans', 'gmail.com'].join('@')}</a>`, widthPercentage: 'three' },
-        { text: 'GitHub：<a href="https://github.com/Yakima-Teng" target="_blank">https://github.com/Yakima-Teng</a>', widthPercentage: 'three' },
-        { text: '看过的书：<a href="https://book.douban.com/people/cleveryun/" target="_blank">https://book.douban.com/people/cleveryun/</a>', widthPercentage: 'two' },
-        { text: '博客：<a href="http://www.orzzone.com" target="_blank">http://www.orzzone.com</a>', widthPercentage: 'two' },
+        { text: '博客：<a href="http://www.orzzone.com" target="_blank">http://www.orzzone.com</a>', widthPercentage: 'three' },
+        { text: 'GitHub：<a href="https://github.com/Yakima-Teng" target="_blank">https://github.com/Yakima-Teng</a>', widthPercentage: 'two' },
+        { text: '看书：<a href="https://book.douban.com/people/cleveryun/" target="_blank">https://book.douban.com/people/cleveryun/</a>', widthPercentage: 'two' },
         { text: '2009 - 2013: 毕业于沈阳药科大学药学（食品药学方向）专业；一本，有过跳级、保送经历，持有CET-6证书', widthPercentage: 'one' }
       ],
       // 技能描述
