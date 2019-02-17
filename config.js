@@ -89,7 +89,7 @@ module.exports = {
           title: '2017年接的私活（后面觉得太费精力，已经不接了）',
           tags: ['从0到1'],
           description: [
-            '爱玩旅行网：PC端旅游项目，网址<a href="http://www.aiwanlx.com" target="_blank">http://www.aiwanlx.com</a>，独立开发并使用pm2部署的node项目（express + pug），算是前端+中间层，除保存session需要外，并不直接操作数据库。',
+            '爱玩旅行网：PC端旅游项目，网址<a href="http://www.aiwanlx.com" target="_blank">http://www.aiwanlx.com</a>（请忽略UI，甲方设计师给的），独立开发并使用pm2部署的node项目（express + pug），算是前端+中间层，除保存session需要外，并不直接操作数据库。',
             'CloudFB云飨：微信公众号可搜、供应链金融、中英双语项目、vue全家桶，菜单About Us => Commercial是react全家桶项目。',
             '苏通云课堂：微信公众号可搜，在线视频课程选购和播放。',
             'Walmake：微信公众号可搜、非纯电商项目，开发时叫北京石竹科技有限公司，现在更名为Walmake了，界面有少许改动，但大部分还是以前写的，用的是vue全家桶。',
