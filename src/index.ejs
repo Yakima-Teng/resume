@@ -17,7 +17,9 @@
         <span class="sub screen-no">--- 请先电面，外包勿扰</span>
         <span class="sub print-no">--- 简历支持浏览器选择A4纸打印</span>
       </section>
-      <section class="intention"><%= sections.intention %></section>
+      <% sections.note.forEach((item) => { %>
+        <section class="intention"><%= item %></section>
+      <% }); %>
     </header>
     <article class="site-content">
       <section class="site-section">
