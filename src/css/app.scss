@@ -55,10 +55,16 @@ a {
       }
     }
   }
-  .intention {
+  .site-note {
     font-size: 12px;
     color: #f00;
     font-weight: bold;
+    @media print {
+      &.site-note {
+        color: #333;
+        font-weight: normal;
+      }
+    }
   }
 }
 
