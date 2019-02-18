@@ -20,12 +20,10 @@ module.exports = {
     sections: {
       // 求职意向
       note: [
-        '3年开发经验，期望薪资25k*13（大体范围），最好是先电话面试下',
-        '上班不是很方便接电话，建议先用其他联系方式联系',
-        '希望可以带3~10人团队',
-        '外包项目、社保不按工资正常缴纳的、长期996的、劳动合同不与公司本司签的勿扰',
-        '注重work-life balance或能提供英文工作环境（仅指口语）的薪资可小议',
-        '公司距离7号线顾村公园或1号线共富新村地铁站一小时范围内均可考虑，太远的话暂时先不考虑了'
+        '3年开发经验，期望薪资22k',
+        '如果方便，最好是先电话面试下',
+        '外包项目勿扰',
+        '注重work-life balance或能提供英文工作环境（指口语）的薪资可小议'
       ],
       // 基本信息
       profile: [
@@ -58,15 +56,6 @@ module.exports = {
       // 项目经验
       projects: [
         {
-          title: '微信公众号',
-          tags: ['2015.12-2018.05', '微信JSSDK'],
-          description: [
-            '微信公众号名为“车保赢”，<strong class="highlight">独立开发维护</strong>了两年的一个项目，最开始接手前该项目使用angular1，接手后由最初的使用“script标签引入Vue”=>“webpack+Vue1全家桶”=>“webpack+Vue2全家桶”，这些重构过程都是主动自发进行的。',
-            '该项目为一个车险投保报价项目，微信端用户输入车牌号后可查询上年度车险投保情况，然后可在线更改险种进行报价下单，对应有个PC端管理系统去管理订单的状态、excel报表的导出、角色权限分配、业绩数据等，曾有两个月参与该项目的JAVA开发（本身JAVA、SQL只是知道些基本语法，因为那几个月开发任务比较轻，后端框架是现成的，有很多已有代码可以参考，所以可以写一些简单的CRUD，难点主要还是sql和业务逻辑吧，涉及到复杂业务逻辑的sql还是要后端同事写好给我的）。',
-            '写该项目期间自己私下里用node写过一个简单服务并用自己申请的微信公众号测试号试验过，了解服务端根据用户code获取openid的逻辑，可以参考这个以前写的：<a href="https://github.com/Yakima-Teng/yakima/blob/master/routes/wechat/index.js" target="_blank">https://github.com/Yakima-Teng/yakima/blob/master/routes/wechat/index.js</a>。'
-          ]
-        },
-        {
           title: '混合APP（hybrid APP）',
           tags: ['2018.09-2019.02', 'react全家桶', 'vue全家桶', 'typescript'],
           description: [
@@ -75,21 +64,30 @@ module.exports = {
           ]
         },
         {
-          title: '原生APP',
-          tags: ['2018.06-2018.08', 'flow', 'react-native', 'redux'],
-          description: [
-            '此为外包项目，APP名为“人寿保险”，离职那会太平洋保险正在弄超级APP（将多个独立APP并为一个APP），现在搜了下要搜“太平洋保险”这个APP了，进入主屏后有个“人寿保险”的图标，点进去即为以前的“人寿保险”APP。',
-            '此项目非独立开发，参与时间较短（3个月），使用flow进行类型检查，使用react-native开发，与iOS、android开发人员进行配合。'
-          ]
-        },
-        {
           title: 'GitHub项目、NPM包',
           tags: ['Mock', '脚手架', 'SSR', '方法库', '单元测试'],
           description: [
             'jmock：命令行工具，全局安装后可以方便地在已有项目中集成数据mock服务，目前正在写第二版——打算用typescript重写并集成mockjs包的功能，因为作者好像不太维护那个包了。',
             'utils-daily：常用函数的封装，用jasmine做单元测试，用flow做类型判断，借助rollup的tree-shaking减小库文件体积，借助JSDoc根据函数注释自动生成API文档。',
-            'djax-cli：命令行工具，参考了vue-cli v2版本的实现，可以快速的创建多页面静态站点，如一些简单的企业站。可用模版有如<a href="https://github.com/Yakima-Teng/resume" target="_blank">https://github.com/Yakima-Teng/resume</a>这种适合创建简单H5项目的模板，你现在看到的这个简历也是使用该模板创建的。',
+            'djax-cli：命令行工具，参考了vue-cli v2版本的实现，可以快速的项目开发环境。可用模版有如<a href="https://github.com/Yakima-Teng/resume" target="_blank">https://github.com/Yakima-Teng/resume</a>这种适合创建简单H5项目的模板，你现在看到的这个简历也是使用该模板创建的。',
             'lookjavascript：一本前端电子书，使用gitbook根据markdown文章生成，写这本书的过程中出于定制的需要写了gitbook-plugin-theme-code、gitbook-plugin-folding-chapters两个gitbook插件。'
+          ]
+        },
+        {
+          title: '微信公众号',
+          tags: ['2015.12-2018.05', '微信JSSDK'],
+          description: [
+            '微信公众号名为“车保赢”，<strong class="highlight">独立开发维护</strong>了两年的一个项目，最开始接手前该项目使用angular1，接手后由最初的使用“script标签引入Vue”=>“webpack+Vue1全家桶”=>“webpack+Vue2全家桶”，这些重构过程都是主动自发进行的。',
+            '该项目为一个车险投保报价项目，微信端用户输入车牌号后可查询上年度车险投保情况，然后可在线更改险种进行报价下单，对应有个PC端管理系统去管理订单的状态、excel报表的导出、角色权限分配、业绩数据等，曾有两个月参与该项目的JAVA开发（本身JAVA、SQL只是知道些基本语法，因为那几个月开发任务比较轻，后端框架是现成的，有很多已有代码可以参考，所以可以写一些简单的CRUD，涉及到复杂业务逻辑的sql还是后端同事写好给我的）。',
+            '写该项目期间自己私下里用node写过一个简单服务并用自己申请的微信公众号测试号试验过，了解服务端根据用户code获取openid的逻辑，可以参考这个以前写的：<a href="https://github.com/Yakima-Teng/yakima/blob/master/routes/wechat/index.js" target="_blank">https://github.com/Yakima-Teng/yakima/blob/master/routes/wechat/index.js</a>。'
+          ]
+        },
+        {
+          title: '原生APP',
+          tags: ['2018.06-2018.08', 'flow', 'react-native', 'redux'],
+          description: [
+            '此为外包项目，APP名为“人寿保险”，离职那会太平洋保险正在弄超级APP（将多个独立APP并为一个APP），现在搜了下要搜“太平洋保险”这个APP了，进入主屏后有个“人寿保险”的图标，点进去即为以前的“人寿保险”APP。',
+            '此项目非独立开发，参与时间较短（3个月），使用flow进行类型检查，使用react-native开发，与iOS、android开发人员进行配合。'
           ]
         },
         {
